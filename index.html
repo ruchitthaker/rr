@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TASK-1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="task1.css">
+
+	
+</head>
+
+<body>
+
+	<ul>
+		<div class="content" id="navbar">
+
+			<svg id="logo" height="32" class="octicon octicon-mark-github color-white" fill="white" viewBox="0 0 16 16"
+				version="1.1" width="32" aria-hidden="true">
+				<path fill-rule="evenodd"
+					d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+				</path>
+			</svg>
+			<div class="nav-left">
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Buisness</a></li>
+				<li><a href="#">Explore</a></li>
+				<li><a href="#">Marketplace</a></li>
+				<li><a href="#">Pricing</a></li>
+			</div>
+			<div class="nav-right">
+				<ul style="float:right;margin-right:10px;">
+					<li><input type="text" id="navsearch" placeholder="Search GitHub" style="background-color:grey;">
+					</li>
+
+					<li><a href="#" style="padding-left:0px;padding-right:5px;">Signin</a></li>
+					<li style="color:grey;text-align:center;padding-top:14px;">or</li>
+					<li><a href="#" style="padding-left:5px;">Signup</a></li>
+				</ul>
+			</div>
+			
+				<label for="check" class="checkbtn" onclick="openNav()">
+					<i class="fa fa-bars"></i>
+				</label>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<input type="text" id="search" placeholder="Search Github">
+					<a href="#">Features</a>
+					<a href="#">Business</a>
+					<a href="#">Explore</a>
+					<a href="#">Marketplace</a>
+					<a href="#">Pricing</a>
+					<hr style="margin-left: 12px; margin-right:12px">
+					<a href="#">Sign in</a>
+					<a href="#">Sign up</a>
+				</div>
+			
+		</div>
+
+	</ul>
+	<div class="row1">
+		<div class="content">
+			<div class="row">
+				<div class="column">
+					<p>Built for Developers</p>
+					<p class="github_para">Github is a development platform inspired by the way you work. From <font
+							color="white">open source</font> to
+						<font color="white">buisness</font>, you can host and review code, manage projects, and build
+						software alongside millions of other developers
+					</p>
+					<div style="text-align: center;margin-top:10px;">
+						<button type="submit" style="margin-top:0px;" id="card-button">Sign up for Github</button>
+					</div>
+
+				</div>
+				<div class="column">
+
+					<div class="card">
+						<form>
+
+
+							<div class="form-group">
+								<label>Username</label>
+								<input type="text" placeholder="Pick a username"></input>
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="text" placeholder="Pick a username"></input>
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="text" placeholder="Pick a username"></input>
+								<p>Use atleast one letter, one numeral, and seven characters.</p>
+							</div>
+							<button type="submit" >Sign up for GitHub</button>
+
+							<p style="text-align:center;color:grey;padding-top:5px;">By clicking "Signup for Github",you
+								agree to our <font color="blue">terms of service</font> and <font color="blue">privacy
+									policy</font>
+								We'll ocassionally send you account related emails</p>
+
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="bottom">
+			<p class="textbottom bottom-line-1">
+				GitHub for</p><br>
+			<p class="textbottom bottom-line-2">
+				A better way to work together</p><br>
+			<p class="textbottom bottom-line-3">
+				GitHub brings teams together to work through problems, move ideas forward,
+				and learn from eachother along the way<br></p>
+			<button>Sign up your team</button>
+		</div>
+	</div>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+</body>
+
+</html>
