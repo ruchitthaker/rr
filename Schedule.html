@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="Schedule.css">
+</head>
+
+<body>
+    <div class="landing-page">
+        <!---------NAVBAR STARTS--------->
+        <nav class="navbar">
+            <!-- <img src="full3.svg" alt="" style="width:100%;height: 100%;"> -->
+
+            <!-- <div class="nav-left">
+                <img src="greendance.svg" alt="" style="top:0;left: 0; position: absolute;z-index: 1;width: 400px;height: 400px;"> -->
+
+            <!-- <div class="blank"></div>
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <div class="left-link" style="color: black; text-align: center;">
+                    <h1>AAPKA SAHARA</h1>
+                </div> -->
+            <!-- </div> -->
+            <!-- ----------------------------------------------------------------------------------- -->
+
+            <div class="nav-right"> 
+            <img src="greendance.svg" alt="" style="top:0;right: 0; position: absolute; z-index: 1;width: 40%;height:40%;">
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- ----------------------------------------------------------------------------------- -->
+
+
+
+        </nav>
+        <!-- ---------NAVBAR ENDS------- -->
+
+
+        <!---------CARDS STARTS--------->
+        <div class="service-container">
+
+            <div class="service-row">
+                <div class="card" >
+                    <div class="card-header ">SCHEDULE</div>
+
+					<div class="card-body">
+
+              <form action="{% url 'adminschedule' %}" enctype="multipart/form-data" method="post">
+                  {% csrf_token %}
+                  <div class="row">
+                        <label for="sem">Choose the sem for the event</label>
+                            <select id="sem" name="sem" style="width:20%;height:40px;text-align:center;padding-left:20px;color:black;">
+                                <option value="1" >Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5" >Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                                <option value="ALL">ALL</option>
+                            </select>
+                  </div>
+                  <div class="row ">
+                        <label for="title" >Name of Event</label>
+                        <input type="text" id="title" name="title" style="width:40%;height:40px;padding-left:20px;margin-left:20px;">
+                  </div>
+                  <div class="row ">
+                      <label for="Meetingtime">Date and time of Event</label>
+                      <input type="datetime-local" min='2021-05-28T00:00' id="Meetingtime" name="Meetingtime" style="height:40px;">
+                  </div>
+                  <div class="row ">
+                      <label for="details">Any details to be noted</label>
+                      <input type="text"  id="details" name="details" style="width:40%;height:40px;padding-left:20px;margin-left:20px;color:black;" placeholder="Details/Notes" required>
+                  </div>
+                  <div class="text-center">
+                      <button type="submit" id="submit" style="margin-bottom:30px;margin-top:50px;" class="btn btn-dark">SCHEDULE</button>
+                  </div>
+              </form>
+        </div>
+      </div>
+                
+                
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
